@@ -1,0 +1,31 @@
+h1, h2, h3, h4 {
+    font-family: 'Averia Serif Libre', serif;
+    color: #40594C;}
+    
+p {
+    font-family: 'Montserrat', sans-serif;
+    color: #63403D;
+}
+
+a {
+    color: #8EAF9D;
+}
+
+nav {
+    font-family: 'Averia Serif Libre', serif;
+    color: #8EAF9D;}
+
+body {
+    padding: 5px 10px;
+    background-color: #F5F5F5;
+}
+
+button.primary-button {
+    background-color: #40594C;
+    color: #F5F5F5;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    border-radius: 25px;
+    padding: 5px 20px;
+}
+    

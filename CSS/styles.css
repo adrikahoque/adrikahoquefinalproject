@@ -1,0 +1,32 @@
+h1, h2, h3, h4 {
+    font-family: 'Averia Serif Libre', serif;
+    color: #40594C;}
+    
+    h1 {
+        font-family: 'Averia Serif Libre', serif;
+        color: #F5F5F5;}
+    
+    header.w3-container {
+        background-color: #40594C;
+    }
+
+    p {
+    font-family: 'Montserrat' , sans-serif;
+    color: #63403D;
+    box-sizing: border-box;}
+
+    article h3 {
+    text-align: center;}
+
+    article img {
+    max-width: 100%;
+    height:auto;}
+
+    nav, #feature, footer {
+    margin: 1%; }
+
+    nav li {
+    display: inline;
+    padding: 0.5em;
+    color: #F5F5F5;
+    }
