@@ -31,7 +31,24 @@ a {
     color: #8EAF9D;
 }
 
-a.nav-links:link {
+/* - - - NAV BAR START - - -*/
+
+a.nav-links-left:link {
+    font-family: "Averia Serif Libre", Georgia, serif;
+    font-size: 20px;
+    margin-right: 50px;
+    color: #8EAF9D;
+    text-decoration: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    float: left;
+}
+
+a.nav-links-left:hover {
+    color: #40594C;
+}
+
+a.nav-links-right:link {
     font-family: "Averia Serif Libre", Georgia, serif;
     font-size: 20px;
     margin-right: 40px;
@@ -39,20 +56,32 @@ a.nav-links:link {
     text-decoration: none;
     cursor: pointer;
     transition-duration: 0.4s;
+    float: right;
 }
 
-a.nav-links:hover {
+a.nav-links-right:hover {
     color: #40594C;
 }
 
 .nav-bar {
     text-decoration:none;
-    margin: 15px 10px;
-    padding: 10px 15px;
+    margin: 15px 0px;
+    padding: 20px 15px;
     position: sticky;
     top: 0;
 
 }
+
+.adrika-logo {
+    width: 120px;
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* - - - NAV BAR END - - -*/
 
 body {
     padding: 5px 10px;
@@ -163,7 +192,7 @@ button.secondary-inactive-button:hover {
 }
 
 
-/* - - - Form Styling - - - */
+/* - - - CONTACT FORM START - - - */
 
 #fcf-form {
     display:block;
@@ -325,3 +354,5 @@ label.fcf-label {
 input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[type="button"].fcf-btn-block {
     width: 100%;
 }
+
+/* - - - CONTACT FORM END - - - */
