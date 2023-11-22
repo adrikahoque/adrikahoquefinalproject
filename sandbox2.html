@@ -5,26 +5,36 @@
     <title>Adrika Hoque W3.CSS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre">
+    <link rel="stylesheet" href="CSS/sandbox2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 </head>
 <body>
 
-<header class="w3-container">  <!--w3-container adds 16 pixels of padding around each element; w3-green makes the background green -->
-    
-  <h1>Adrika Hoque - Portfolio</h1>
-	<nav>
-        <ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="gallery.html">Gallery</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-	</nav>
-</header>
+    <header>
+        <div class="container"> 
+            <nav class="navbar">
+              <a href="#" class="nav-branding">Adrika's Portfolio</a>
+              <ul class="nav-menu">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Contact</a>
+                </li>
+              </ul>
+              <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+            </nav>
+         </div>
+       </header>
+      
 
 <div class="w3-container">
     <h2>Design Photo Gallery</h2>
@@ -75,5 +85,6 @@
         <footer>
 			<p>&copy; Copyright 2023</p>
 		</footer>
+        <script src="script.js"></script>
 	</body>
 </html>
