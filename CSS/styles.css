@@ -31,60 +31,107 @@ a {
     color: #8EAF9D;
 }
 
-/* - - - NAV BAR START - - -*/
+/* - - - NAV BAR - - -*/
 
-a.nav-links-left:link {
+header {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+}
+
+#logo {
+    width: 170px;
+    height: auto;
+    margin-left: 30px;
+}
+
+nav {
+    display: flex;
+}
+
+nav a, nav button {
+    color: #40594C;
     font-family: "Averia Serif Libre", Georgia, serif;
-    font-size: 20px;
-    margin-right: 50px;
-    color: #8EAF9D;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 30px;
     text-decoration: none;
+    text-transform: uppercase;
     cursor: pointer;
     transition-duration: 0.4s;
+}
+
+nav a:hover {
+    color: #8EAF9D;
+}
+
+.dropdown {
     float: left;
-}
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    cursor: pointer; 
+    border: none;
+    outline: none;
+    margin: 0;
+  }
 
-a.nav-links-left:hover {
-    color: #40594C;
-}
-
-a.nav-links-right:link {
-    font-family: "Averia Serif Libre", Georgia, serif;
-    font-size: 20px;
-    margin-right: 40px;
-    color: #8EAF9D;
-    text-decoration: none;
-    cursor: pointer;
-    transition-duration: 0.4s;
-    float: right;
-}
-
-a.nav-links-right:hover {
-    color: #40594C;
-}
-
-.nav-bar {
-    text-decoration:none;
-    margin: 15px 0px;
-    padding: 20px 15px;
-    position: sticky;
-    top: 0;
-
-}
-
-.adrika-logo {
-    width: 120px;
-    float: none;
+  .dropdown-content {
+    display: none;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    background-color: #f5f5f5;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: #40594C;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .show {
+    display: block;
+  }
+
+/* - - - HERO SECTION - - - */
+
+.hero-section {
+    height: 80vh;
+    width: auto;
+    background: url(/Images/[Thai_FoodStyling]-72dpi.png) center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 
-/* - - - NAV BAR END - - -*/
+/* - - - ABOUT SECTION - - - */
+
+.about-section {
+    background-color: #63403D;
+    color: #F5F5F5;
+    width: auto;
+    text-align: center;
+}
+
+h3.about-section {
+    color: #F5F5F5;
+    text-align: center;
+    margin: 0px;
+}
 
 body {
-    padding: 5px 10px;
     background-color: #F5F5F5;
 }
 
@@ -94,6 +141,49 @@ footer {
     font-size: 12px;
     color:#63403D
 }
+
+/* - - - SERVICE CARDS - - - */
+* {
+    box-sizing: border-box;
+}
+
+.service-card  {
+    background-color: #40594C;
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.5);
+    padding: 16px; 
+}
+
+.service-card p, h3 {
+    color: #F5F5F5;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+
+}
+
+.row {
+    margin: 0 -5px;
+}
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+}
+
 
 /* - - - Button Styling - - - */
 

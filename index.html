@@ -6,43 +6,85 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre|Montserrat">
-     <link rel="stylesheet" href="../CSS/styles.css">
+     <link rel="stylesheet" href="CSS/styles.css">
+     <script src="script.js"></script>
      <title>Adrika Hoque's Portfolio</title>
 </head>
 
 <body>
-    <div class="nav-bar">
-    <img class="adrika-logo" src="Images/Adrika_Lettering_TP.png" alt="Adrika Logo">
+    <header>
+        <img src="Images/Adrika_Lettering_TP.png" alt="Logo" id="logo">
         <nav>
-            <ul>
-                <a class="nav-links-left" href="index.html">Home</a>
-                <a class="nav-links-left" href="about.html">About</a>
-                <a class="nav-links-right" href="work.html">Work</a>
-                <a class="nav-links-right" href="contact.html">Contact</a>
-            </ul>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()">Work
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                  <a href="#">Advertising</a>
+                  <a href="#">Events</a>
+                  <a href="#">Art Direction</a>
+                  <a href="#">Typography</a>
+                </div>
+                </div> 
+              </div>              
+            <a href="#about-section">About</a>
+            <a href="contact.html">Contact</a>
         </nav>
-    </div>
+    </header>
 
-    <h1>Adrika Hoque's Portfolio</h1>
+    <section class="hero-section">
+        <h1>Design Portfolio</h1>
+    </section>
 
-    <article class="w3-row">
-        <section class="w3-col s4">
-            <img src="../Images/[Thai_FoodStyling]-72dpi.png"/>
+    <section class="about-section">
+        <p class="about-section">ABOUT</p>
+        <h3 class="about-section">Multidisciplinary in-house Creative Designer
+            <br/>with 2+ years of experience delivering creative strategy
+            <br/> and operational solutions for Fortune 100 clients.
+        </h3>
+    </section>
+
+    <section class="row">
+        <article class="column">
+            <section class="service-card">
+                <p>01</p>
+                <h3>Advertising Design</h3>
+                <p>lorem ipsum</p>
+            </section>
+            </article>
+        
+    <section class="row">
+        <article class="column">
+            <section class="service-card">
+                <p>02</p>
+                <h3>Event Design</h3>
+                <p>lorem ipsum</p>
+            </section>
+            </article>
+        
+    <section class="row">
+        <article class="column">
+            <section class="service-card">
+                <p>03</p>
+                <h3>Art Direction</h3>
+                <p>lorem ipsum</p>
+            </section>
+            </article>
         </section>
-        <section class="w3-col s4">
-            <img src="../Images/[Loreal_AdCampaign]-72dpi.png"/>
+
+    <section class="row">
+        <article class="column">
+            <section class="service-card">
+                <p>04</p>
+                <h3>Typography</h3>
+                <p>lorem ipsum</p>
+            </section>
+            </article>
         </section>
-        <section class="w3-col s4">
-            <img src="../Images/[Hawaiian_Menu]-72dpi.png"/>
-        </section>
-    </article>
+        
+    </section>
 
-    <h2>About Me</h2>
-    <p>Multidisciplinary in-house Creative Designer with 2+ years
-        of experience delivering creative strategy and operational
-        solutions for Fortune 100 clients.</p>
-
-
+    
     <button class="primary-button">Contact</button>
 
     <button class="secondary-button">Secondary</button>
