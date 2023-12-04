@@ -142,7 +142,7 @@ nav a:hover {
 .hero-section {
     height: 80vh;
     width: auto;
-    background: url(/Images/[Thai_FoodStyling]-300dpi.png) center/cover no-repeat;
+    background: url(Images/[Thai_FoodStyling]-300dpi.png) center/cover no-repeat;
     display: flex;
     align-items: center;
     text-align: center;
@@ -373,6 +373,33 @@ button.secondary-inactive-button:hover {
     cursor: not-allowed;
 }
 
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #F5F5F5;
+    border: 2px solid #40594C;
+    color: #40594C;
+    font-family: "Montserrat", Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+    border-radius: 25px;
+    padding: 12px 28px;
+    margin: 4px 2px;
+  }
+  
+  #myBtn:hover {
+    color: #8EAF9D;
+    border: 2px solid #8EAF9D;
+  }
 
 /* - - - CONTACT FORM START - - - */
 
@@ -538,3 +565,4 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
 }
 
 /* - - - CONTACT FORM END - - - */
+
