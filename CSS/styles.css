@@ -9,22 +9,20 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    font-size: 80px;
+    font-size: 6rem;
     text-align: center;
-    justify-content: center;
+    color: #F5F5F5;
+
 }
 
 h2 {
-    font-size: 36px;
+    font-size: 3rem;
 }
 
 h3 {
-    font-size: 30px;
+    font-size: 2.5rem;
 }
 
-h4 {
-    font-size: 24px;
-}
     
 p {
     font-family: "Montserrat", Helvetica, sans-serif;
@@ -38,7 +36,7 @@ p {
         font-size: 50px;
     }
     h2 {
-        font-size: 30px;
+        font-size: 28px;
     }
     h3 {
         font-size: 20px;
@@ -139,13 +137,36 @@ nav a:hover {
 
 /* - - - HERO SECTION - - - */
 
-.hero-section {
-    height: 80vh;
-    width: auto;
-    background: url(Images/[Thai_FoodStyling]-300dpi.png) center/cover no-repeat;
+.hero {
+    margin: 0;
+    width: 100%;
+    height: 50vh;
     display: flex;
+    justify-content: center;
     align-items: center;
     text-align: center;
+    color: #F5F5F5;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('/Images/[Thai_FoodStyling]-300dpi.png') center/cover no-repeat;
+}
+
+.hero h1 {
+    font-size: 5em;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.hero h2 {
+    color: #F5F5F5;
+}
+
+
+
+@media screen and (max-width:600px) {
+    .hero-section {
+        width: 100%;
+        height: 20rem;
+    }
+
 }
 
 
@@ -184,59 +205,67 @@ footer {
 }
 
 /* - - - SERVICE CARDS - - - */
-* {
-    box-sizing: border-box;
+
+.h2-services {
+    padding: 50px 0px 0px 50px;
+    margin: 0;
 }
 
-.service-card  {
-    background-color: #40594C;
-    text-align: center;
-    border-radius: 25px;
-    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.5);
-    padding: 30px; 
+.test-column p, h3 {
+    color: #40594C;
 }
 
-.service-card p, h3 {
-    color: #F5F5F5;
-}
-
-.column {
+.test-column {
     float: left;
     width: 25%;
-    padding: 0 10px;
-
+    height: ;
+    padding: 20px 50px 40px 50px;
 }
 
-section.row {
-    margin: 40px 30px;
-}
-
-.row {
-    margin: 0px;
-}
-  
-.row:after {
+.test-column::after{
     content: "";
     display: table;
     clear: both;
 }
 
-@media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
-    }
+@media screen and (max-width: 900px) {
+    .test-column {
+        width: 50%;
+    }  
 }
+
+@media screen and (max-width: 600px) {
+    .test-column {
+        width: 100%;
+    }  
+}
+
+* {
+    box-sizing: border-box;
+}
+
 
 .featured-banner {
     background-color: #63403D;
     width: 100%;
-    height: 95px;
+    height: 10vh;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.featured-banner h3 {
+    color: #F5F5F5;
+}
+
+.contact-section {
+    background-color: #63403D;
+    padding: 50px 30px 50px 50px;
+}
+
+.contact-section h2, p {
+    color: #F5F5F5;
 }
 
 /* - - - Image Gallery - - - */
@@ -245,6 +274,7 @@ section.row {
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
+    margin: 0px 0px 10px 0px;
   }
   
   /* Create four equal columns that sits next to each other */
@@ -279,7 +309,7 @@ section.row {
 
 /* - - - Button Styling - - - */
 
-button.primary-button {
+.primary-button {
     background-color: #40594C;
     border: none;
     color: #F5F5F5;
@@ -298,12 +328,12 @@ button.primary-button {
     
 }
 
-button.primary-button:hover {
+.primary-button:hover {
     background-color: #8EAF9D;
     color: white;
 }
 
-button.secondary-button {
+.secondary-button {
     background-color: #F5F5F5;
     border: 2px solid #40594C;
     color: #40594C;
@@ -322,12 +352,12 @@ button.secondary-button {
     
 }
 
-button.secondary-button:hover {
+.secondary-button:hover {
     color: #8EAF9D;
     border: 2px solid #8EAF9D;
 }
 
-button.primary-inactive-button {
+.primary-inactive-button {
     background-color: #63403D;
     border: none;
     color: #F5F5F5;
@@ -346,11 +376,11 @@ button.primary-inactive-button {
     
 }
 
-button.primary-inactive-button:hover {
+.primary-inactive-button:hover {
     cursor: not-allowed;
 }
 
-button.secondary-inactive-button {
+.secondary-inactive-button {
     background-color: #F5F5F5;
     border: 2px solid #63403D;
     color: #63403D;
@@ -401,6 +431,66 @@ button.secondary-inactive-button:hover {
     border: 2px solid #8EAF9D;
   }
 
+/* Footer Section */
+
+  .footer {
+    position: relative;
+    width: 100%;
+    background: #f5f5f5;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .social-icon,
+  .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+  }
+  
+  .social-icon__item,
+  .menu__item {
+    list-style: none;
+  }
+  
+  .social-icon__link {
+    font-size: 2rem;
+    color: #40594C;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+  }
+  .social-icon__link:hover {
+    transform: translateY(-10px);
+  }
+  
+  .menu__link {
+    font-size: 1.2rem;
+    color: #40594C;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+  }
+  
+  .menu__link:hover {
+    opacity: 1;
+  }
+  
+  .footer p {
+    color: #40594C;
+    margin: 0 10px;
+    font-size: 1rem;
+  }
 /* - - - CONTACT FORM START - - - */
 
 #fcf-form {
