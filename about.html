@@ -12,27 +12,75 @@
 </head>
 
 <body>
+    <!-- Nav Section -->
     <header>
         <a href="index.html">
             <img src="Images/Adrika_Lettering_TP.png" alt="Logo" id="logo">
         </a>
+        <div class="menu-toggle" id="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <nav>
-            <div class="dropdown">
-                <button class="dropbtn" onclick="myFunction()">Work
-                <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content" id="myDropdown">
-                <a href="#">Advertising</a>
-                <a href="#">Events</a>
-                <a href="#">Art Direction</a>
-                <a href="#">Typography</a>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction()">Work
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="#advertising-design">Advertising</a>
+                        <a href="#event-design">Events</a>
+                        <a href="#art-direction">Art Direction</a>
+                        <a href="#typography">Typography</a>
+                    </div>
                 </div>
-                </div> 
-            </div>              
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
+                <a href="about.html">About</a></li>
+                <a href="contact.html">Contact</a></li>
         </nav>
     </header>
 
+ <!-- Hero Section -->
+
+    <section class="hero">
+    <div class="hero-inner">
+        <h1>About Me</h1>
+        <a href="contact.html" class="primary-button">CONTACT</a>
+    </div>
+    </section>
+
+    <article>
+        <p>
+            Hi there! I’m an ambitious Communications Design student at City Tech and
+            a highly motivated in-house multimedia Creative Designer with 2+ years of experience
+            in the Hospitality industry delivering creative strategy and operational solutions for Fortune 100 clients.
+            I utilize design theory and principles to curate visual experiences with an emphasis on story telling.
+
+            I’ve always been drawn to art and design ever since I was a child learning
+            from YouTube tutorials on how to draw but decided to pursue a STEM career
+            due to stability and societal pressure. The passion was never there and
+            so I switched to COMD where I think there’s a good blend of tech and art.
+            I’m inspired by modern and old architecture, renaissance paintings, and photography.
+            My hobbies in my spare time include reading, crocheting, and archery.
+        </p>
+    </article>
+
+    <section>
+        <h2>Resume</h2>
+        <!-- Trigger the Modal -->
+    <img id="myImg" src="Images/AdrikaHoque_OHG_Resume.png" alt="resume" style="width:100%;max-width:300px">
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" id="img01">
+
+    <!-- Modal Caption (Image Text) -->
+    <div id="caption"></div>
+    </div>
+        </section>
 </body>
 </html>
