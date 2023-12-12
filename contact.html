@@ -2,42 +2,58 @@
 <html lang="en">
 
 <head>
-     <meta charset="utf-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre|Montserrat">
-     <link rel="stylesheet" href="CSS/styles.css">
-     <script src="script.js"></script>
-     <title>Adrika Hoque's Design Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre|Montserrat">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="script.js"></script>
+    <title>Adrika Hoque Design Portfolio | About</title>
 </head>
 
 <body>
-    <header>
-        <a href="index.html">
-            <img src="Images/Adrika_Lettering_TP.png" alt="Logo" id="logo">
-        </a>
-        <nav>
-            <div class="dropdown">
-                <button class="dropbtn" onclick="myFunction()">Work
-                  <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content" id="myDropdown">
-                  <a href="#">Advertising</a>
-                  <a href="#">Events</a>
-                  <a href="#">Art Direction</a>
-                  <a href="#">Typography</a>
-                </div>
-                </div> 
-              </div>              
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+   <!-- Nav Section -->
+   <header>
+       <a href="index.html">
+           <img src="Images/Adrika_Lettering_TP.png" alt="Logo" id="logo">
+       </a>
+       <div class="menu-toggle" id="mobile-menu">
+           <span></span>
+           <span></span>
+           <span></span>
+       </div>
+       <nav>
+               <div class="dropdown">
+                   <button class="dropbtn" onclick="myFunction()">Work
+                       <i class="fa fa-caret-down"></i>
+                   </button>
+                   <div class="dropdown-content" id="myDropdown">
+                       <a href="#advertising-design">Advertising</a>
+                       <a href="#event-design">Events</a>
+                       <a href="#art-direction">Art Direction</a>
+                       <a href="#typography">Typography</a>
+                   </div>
+               </div>
+               <a href="about.html">About</a></li>
+               <a href="contact.html">Contact</a></li>
+       </nav>
+   </header>
 
-<div class="fcf-body">
+    <!-- Hero Section -->
+
+    <section class="hero">
+        <div class="hero-inner">
+            <h1>Contact Me</h1>
+            <a href="index.html" class="primary-button">Home</a>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+
+    <div class="fcf-body">
 
     <div id="fcf-form">
-    <h3 class="fcf-h3">Contact us</h3>
+    <h3 class="fcf-h3">Contact</h3>
 
     <form id="fcf-form-id" class="fcf-form-class" method="post" action="https://formsubmit.co/0560d23ced54eae9e533693e43174e65">
         
@@ -73,7 +89,50 @@
     </form>
     </div>
 
-</div>
+    </div>
+
+    <section class="footer">
+    <footer>
+        <ul class="social-icon">
+            <li class="social-icon__item"><a class="social-icon__link" href="https://www.linkedin.com/in/adrikahoque/">
+                <ion-icon name="logo-linkedin"></ion-icon>
+                </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/opulentjade/">
+                <ion-icon name="logo-instagram"></ion-icon>
+                </a></li>
+            </ul>
+            <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
+            <li class="menu__item"><a class="menu__link" href="about.html">About</a></li>
+            <li class="menu__item"><a class="menu__link" href="contact.html">Contact</a></li>
+            </ul>
+        <p>© Adrika Hoque 2023</p>
+    </footer>
+    </section>
+    <script>
+    // Get the button
+    let mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+        } else {
+        mybutton.style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 </html>

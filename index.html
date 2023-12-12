@@ -205,6 +205,35 @@
         </section>
     </section>
 
+    <!-- The grid: four columns -->
+<div class="row">
+    <div class="column">
+      <img src="Images/Tatcha_Advert_1.png" alt="Nature" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="Images/Tatcha_Advert_2.png" alt="Snow" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="Images/Tatcha_Advert_3.png" alt="Mountains" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="#" alt="Lights" onclick="myFunction(this);">
+    </div>
+  </div>
+  
+  <!-- The expanding image container -->
+  <div class="container">
+    <!-- Close the image -->
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  
+    <!-- Expanded image -->
+    <img id="expandedImg" style="width:100%">
+  
+    <!-- Image text -->
+    <div id="imgtext"></div>
+  </div>
+
+    <!-- Contact Section -->
     <section class="contact-section">
         <h2>Contact</h2>
         <p>hoqueadrika@gmail.com
@@ -214,6 +243,7 @@
         <a href="https://www.linkedin.com/in/adrikahoque/">Connect</a>
     </section>
 
+    <!--Footer Section-->
     <section class="footer">
         <footer>
             <ul class="social-icon">

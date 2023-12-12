@@ -49,13 +49,13 @@
     </section>
 
     <article>
-        <p>
+        <p class="about-article">
             Hi there! I’m an ambitious Communications Design student at City Tech and
-            a highly motivated in-house multimedia Creative Designer with 2+ years of experience
+            a highly motivated in-house multidisciplinary Creative Designer with 2+ years of experience
             in the Hospitality industry delivering creative strategy and operational solutions for Fortune 100 clients.
             I utilize design theory and principles to curate visual experiences with an emphasis on story telling.
-
-            I’ve always been drawn to art and design ever since I was a child learning
+            <br/>
+            <br/>I’ve always been drawn to art and design ever since I was a child learning
             from YouTube tutorials on how to draw but decided to pursue a STEM career
             due to stability and societal pressure. The passion was never there and
             so I switched to COMD where I think there’s a good blend of tech and art.
@@ -64,23 +64,56 @@
         </p>
     </article>
 
-    <section>
+    <section class="h3-resume">
         <h2>Resume</h2>
-        <!-- Trigger the Modal -->
-    <img id="myImg" src="Images/AdrikaHoque_OHG_Resume.png" alt="resume" style="width:100%;max-width:300px">
 
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
+        <img id="resume" src="Images/AdrikaHoque_OHG_Resume.png" alt="resume">
 
-    <!-- The Close Button -->
-    <span class="close">&times;</span>
-
-    <!-- Modal Content (The Image) -->
-    <img class="modal-content" id="img01">
-
-    <!-- Modal Caption (Image Text) -->
-    <div id="caption"></div>
-    </div>
         </section>
+
+    <section class="footer">
+        <footer>
+            <ul class="social-icon">
+                <li class="social-icon__item"><a class="social-icon__link" href="https://www.linkedin.com/in/adrikahoque/">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                    </a></li>
+                <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/opulentjade/">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                    </a></li>
+                </ul>
+                <ul class="menu">
+                <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
+                <li class="menu__item"><a class="menu__link" href="about.html">About</a></li>
+                <li class="menu__item"><a class="menu__link" href="contact.html">Contact</a></li>
+                </ul>
+            <p>© Adrika Hoque 2023</p>
+        </footer>
+    </section>
+
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+            } else {
+            mybutton.style.display = "none";
+            }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        
 </body>
 </html>
