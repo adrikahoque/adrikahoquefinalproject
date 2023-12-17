@@ -8,7 +8,7 @@
     padding: 0;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, h6 {
     font-family: "Averia Serif Libre", Georgia, serif;
     font-weight: 700;
     color: #40594C;
@@ -595,13 +595,8 @@ button.secondary-inactive-button:hover {
     padding: 50px;
 }
 
-.h3-resume {
-    padding: 50px;
-}
-
-#resume {
-    width: 100%;
-    padding: 75px 0px;
+.resume-name {
+    color: #F5F5F5;
 }
 
 /* - - - CONTACT FORM START - - - */
